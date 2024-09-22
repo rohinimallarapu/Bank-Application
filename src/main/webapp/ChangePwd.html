@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change Password</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('PwdSuccess.jpeg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    form {
+        background-color: rgba(0, 0, 0, 0.8); 
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745; 
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #218838; 
+    }
+
+</style>
+</head>
+<body>
+    <form action="ChangePassword">
+        <h2>Please enter your new password</h2>
+        <label for="npwd">New Password</label>
+        <input type="password" id="npwd" name="npwd"/><br>
+
+        <label for="cpwd">Confirm Password</label>
+        <input type="password" id="cpwd" name="cpwd"/><br>
+
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
